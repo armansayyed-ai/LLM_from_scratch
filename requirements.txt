@@ -1,0 +1,29 @@
+# Python 3.10+
+# For GPU PyTorch, install from https://pytorch.org after this file.
+
+# Core
+torch>=2.2.0
+tensorflow>=2.16.0
+numpy>=1.26.0
+pandas>=2.2.0
+
+# Tokenization
+tiktoken>=0.7.0
+regex>=2024.0.0
+
+# Training utilities
+tqdm>=4.66.0
+einops>=0.8.0
+PyYAML>=6.0.1
+
+# Visualization and logging
+matplotlib>=3.8.0
+seaborn>=0.13.0
+tensorboard>=2.16.0
+
+# Notebooks
+jupyter>=1.0.0
+ipykernel>=6.29.0
+
+# Testing
+pytest>=8.0.0

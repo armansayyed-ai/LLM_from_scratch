@@ -13,28 +13,37 @@ This project focuses on understanding and implementing the core concepts behind 
 ## Getting Started
 
 ### Prerequisites
-- Python 3.8+
-- PyTorch/TensorFlow
-- NumPy, Pandas
+- Python 3.10+
+- [uv](https://docs.astral.sh/uv/) (`powershell -c "irm https://astral.sh/uv/install.ps1 | iex"` on Windows)
 
 ### Installation
 
-```bash
+```powershell
 git clone https://github.com/armansayyed-ai/LLM_from_scratch.git
 cd LLM_from_scratch
-pip install -r requirements.txt
+uv venv .venv --python 3.12
+.\.venv\Scripts\Activate.ps1
+uv pip install -r requirements.txt
 ```
+
+macOS/Linux: `source .venv/bin/activate` instead of the Activate.ps1 line.
+
+For CUDA PyTorch, follow the install command on [pytorch.org](https://pytorch.org) after the requirements install.
 
 ## Project Structure
 
 ```
 LLM_from_scratch/
-├── data/              # Dataset directory
+├── data/              # Datasets (gitignored except placeholders)
 ├── models/            # Model implementations
 ├── notebooks/         # Jupyter notebooks for exploration
 ├── src/               # Source code
 ├── tests/             # Unit tests
-└── README.md          # This file
+├── .env.example       # Environment variable template
+├── .gitignore
+├── LICENSE
+├── README.md
+└── requirements.txt
 ```
 
 ## Contributing
