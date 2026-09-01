@@ -30,6 +30,8 @@ macOS/Linux: `source .venv/bin/activate` instead of the Activate.ps1 line.
 
 For CUDA PyTorch, follow the install command on [pytorch.org](https://pytorch.org) after the requirements install.
 
+In the notebook kernel picker, select **`.venv (Python 3.12)`**. That is this project's virtual environment.
+
 ## Project Structure
 
 ```
